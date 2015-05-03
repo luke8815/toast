@@ -14,6 +14,8 @@
 		BF5A2D1D1AF496E600947249 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF5A2D1C1AF496E600947249 /* Images.xcassets */; };
 		BF5A2D201AF496E600947249 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF5A2D1E1AF496E600947249 /* LaunchScreen.xib */; };
 		BF5A2D2C1AF496E600947249 /* toastTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5A2D2B1AF496E600947249 /* toastTests.m */; };
+		BF8C89711AF4BEF400E81BB0 /* FJToastManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C896E1AF4BEF400E81BB0 /* FJToastManager.m */; };
+		BF8C89721AF4BEF400E81BB0 /* FJToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C89701AF4BEF400E81BB0 /* FJToastView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		BF5A2D251AF496E600947249 /* toastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = toastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5A2D2A1AF496E600947249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF5A2D2B1AF496E600947249 /* toastTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = toastTests.m; sourceTree = "<group>"; };
+		BF8C896D1AF4BEF400E81BB0 /* FJToastManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FJToastManager.h; path = FJToast/FJToastManager.h; sourceTree = "<group>"; };
+		BF8C896E1AF4BEF400E81BB0 /* FJToastManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FJToastManager.m; path = FJToast/FJToastManager.m; sourceTree = "<group>"; };
+		BF8C896F1AF4BEF400E81BB0 /* FJToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FJToastView.h; path = FJToast/FJToastView.h; sourceTree = "<group>"; };
+		BF8C89701AF4BEF400E81BB0 /* FJToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FJToastView.m; path = FJToast/FJToastView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 		BF5A2D0E1AF496E600947249 /* toast */ = {
 			isa = PBXGroup;
 			children = (
+				BF8C896C1AF4BEAC00E81BB0 /* FJToast */,
 				BF5A2D131AF496E600947249 /* AppDelegate.h */,
 				BF5A2D141AF496E600947249 /* AppDelegate.m */,
 				BF5A2D161AF496E600947249 /* ViewController.h */,
@@ -117,6 +124,17 @@
 				BF5A2D2A1AF496E600947249 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF8C896C1AF4BEAC00E81BB0 /* FJToast */ = {
+			isa = PBXGroup;
+			children = (
+				BF8C896D1AF4BEF400E81BB0 /* FJToastManager.h */,
+				BF8C896E1AF4BEF400E81BB0 /* FJToastManager.m */,
+				BF8C896F1AF4BEF400E81BB0 /* FJToastView.h */,
+				BF8C89701AF4BEF400E81BB0 /* FJToastView.m */,
+			);
+			name = FJToast;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +238,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF5A2D181AF496E600947249 /* ViewController.m in Sources */,
+				BF8C89711AF4BEF400E81BB0 /* FJToastManager.m in Sources */,
+				BF8C89721AF4BEF400E81BB0 /* FJToastView.m in Sources */,
 				BF5A2D151AF496E600947249 /* AppDelegate.m in Sources */,
 				BF5A2D121AF496E600947249 /* main.m in Sources */,
 			);
@@ -412,6 +432,7 @@
 				BF5A2D311AF496E600947249 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF5A2D321AF496E600947249 /* Build configuration list for PBXNativeTarget "toastTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +441,7 @@
 				BF5A2D341AF496E600947249 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

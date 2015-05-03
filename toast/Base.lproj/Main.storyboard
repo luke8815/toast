@@ -1,25 +1,102 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="10002" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oN4-EF-NTO">
+                                <rect key="frame" x="70" y="110" width="181" height="29"/>
+                                <state key="normal" title="toast:duration">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnTaped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Oc7-ud-FiE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="10003" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjv-dZ-ahn">
+                                <rect key="frame" x="52" y="165" width="217" height="30"/>
+                                <state key="normal" title="toast:duration:tapcallback">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnTaped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HZg-vn-oOq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="10004" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YdQ-Ma-yiD">
+                                <rect key="frame" x="35" y="194" width="250" height="88"/>
+                                <state key="normal" title="toast:duration:tapcallback:complete">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnTaped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3mm-jl-pm9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="10005" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMr-6r-dzG">
+                                <rect key="frame" x="94" y="317" width="132" height="23"/>
+                                <state key="normal" title="toast utill finish">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnTaped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7XJ-bV-BTe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="10006" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPo-Dv-Umq">
+                                <rect key="frame" x="103" y="370" width="114" height="28"/>
+                                <state key="normal" title="hidden toast">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnTaped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="85X-kQ-9yq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="10001" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dy-Wj-d8y">
+                                <rect key="frame" x="113" y="43" width="95" height="47"/>
+                                <state key="normal" title="toast">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnTaped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="TNi-xL-Oia"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="YdQ-Ma-yiD" secondAttribute="centerX" id="1pg-rs-OEH"/>
+                            <constraint firstAttribute="centerX" secondItem="8dy-Wj-d8y" secondAttribute="centerX" id="8Hy-74-KEQ"/>
+                            <constraint firstAttribute="centerX" secondItem="zMr-6r-dzG" secondAttribute="centerX" id="Bdb-VJ-3au"/>
+                            <constraint firstItem="8dy-Wj-d8y" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="GN8-60-c4G"/>
+                            <constraint firstAttribute="centerX" secondItem="TPo-Dv-Umq" secondAttribute="centerX" id="Ii8-RK-rnk"/>
+                            <constraint firstItem="TPo-Dv-Umq" firstAttribute="top" secondItem="zMr-6r-dzG" secondAttribute="bottom" constant="20" id="P5G-DN-Thy"/>
+                            <constraint firstItem="oN4-EF-NTO" firstAttribute="top" secondItem="8dy-Wj-d8y" secondAttribute="bottom" constant="20" id="PfL-2K-hc0"/>
+                            <constraint firstAttribute="centerX" secondItem="fjv-dZ-ahn" secondAttribute="centerX" id="QHg-GW-hOd"/>
+                            <constraint firstItem="fjv-dZ-ahn" firstAttribute="top" secondItem="oN4-EF-NTO" secondAttribute="bottom" constant="20" id="TZb-6u-uxT"/>
+                            <constraint firstItem="YdQ-Ma-yiD" firstAttribute="top" secondItem="fjv-dZ-ahn" secondAttribute="bottom" constant="20" id="bAf-2C-Nxy"/>
+                            <constraint firstAttribute="centerX" secondItem="oN4-EF-NTO" secondAttribute="centerX" id="esT-TY-1pc"/>
+                            <constraint firstItem="zMr-6r-dzG" firstAttribute="top" secondItem="YdQ-Ma-yiD" secondAttribute="bottom" constant="20" id="zDd-o0-i5r"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="160.53333333333333" y="105.08"/>
         </scene>
     </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>
