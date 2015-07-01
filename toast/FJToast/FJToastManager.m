@@ -18,6 +18,7 @@ static const NSTimeInterval FJAnimationDuration = 0.5f;
 + (void)showToast:(NSString *)message
 {
     [self showToast:message duration:FJDefaultDuration];
+    //注释
 }
 
 + (void)showToast:(NSString *)message duration:(NSTimeInterval)duration
